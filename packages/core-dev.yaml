@@ -72,6 +72,7 @@ i2c:
 sensor:
   - platform: dht
     pin: GPIO32
+    model: DHT11 
     temperature:
       name: "Wohnzimmer Temperature"
     humidity:
