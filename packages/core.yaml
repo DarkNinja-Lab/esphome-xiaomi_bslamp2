@@ -60,6 +60,16 @@ i2c:
   scl: GPIO19
   scan: true
 
+
+sensor:
+  - platform: DHT11
+    pin: GPIO32
+    temperature:
+      name: "Wohnzimmer Luftfeuchtigkeit"
+    humidity:
+      name: "Wohnzimmer Luftfeuchtigkeit"
+    update_interval: 30s
+
 output:
   - platform: ledc
     id: output_red
