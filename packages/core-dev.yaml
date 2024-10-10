@@ -13,10 +13,10 @@
 # --------------------------------------------------------------------------
 
 substitutions:
-  name: bedside-lamp
-  friendly_name: Bedside Lamp
-  light_name: ${friendly_name} RGBWW Light
-  light_mode_text_sensor_name: ${friendly_name} Light Mode
+  name: tisch-lampe
+  friendly_name: Tisch Lampe
+  light_name: ${friendly_name} RGBWW Licht
+  light_mode_text_sensor_name: ${friendly_name} Licht Modus
   default_transition_length: 800ms
 
 # --------------------------------------------------------------------------
@@ -67,6 +67,16 @@ i2c:
   sda: GPIO21
   scl: GPIO19
   scan: true
+
+
+sensor:
+  - platform: dht
+    pin: GPIO32
+    temperature:
+      name: "Wohnzimmer Temperature"
+    humidity:
+      name: "Wohnzimmer Humidity"
+    update_interval: 30s
 
 output:
   - platform: ledc
