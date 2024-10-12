@@ -1,4 +1,4 @@
-# ESPHome support for Xiaomi Mijia Bedside Lamp 2
+# Xiaomi Bedside Lamp 2
 
 [ [Changelog](CHANGELOG.md) | [License](LICENSE.md) | [Code of conduct](CODE_OF_CONDUCT.md) ]
  
