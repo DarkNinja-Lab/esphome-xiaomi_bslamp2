@@ -61,6 +61,11 @@ i2c:
   scan: true
 
 
+switch:
+  - platform: gpio
+    pin: GPIO??
+    name: "taster"
+
 sensor:
   - platform: dht
     pin: GPIO32
