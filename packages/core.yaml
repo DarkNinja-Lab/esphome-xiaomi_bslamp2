@@ -63,7 +63,7 @@ i2c:
 
 switch:
   - platform: gpio
-    pin: GPIO??
+    pin: GPIO39
     name: "taster"
 
 sensor:
